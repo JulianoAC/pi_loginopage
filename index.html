@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- Login -->
+        <div class="formulario formulario-login ativo">
+          <h2 class="titulo-formulario">Login</h2>
+          <form class="form-autenticacao">
+            <div class="campo-formulario">
+              <input
+                type="email"
+                class="input-email"
+                placeholder="CPF ou E-mail"
+                required
+              />
+            </div>
+            <div class="campo-formulario">
+              <input
+                type="password"
+                class="input-senha"
+                placeholder="Senha"
+                required
+              />
+            </div>
+            <button type="submit" class="botao-enviar">Entrar</button>
+          </form>
+          <div class="painel">
+            <h3>Não tem uma conta?</h3>
+            <p>Cadastre-se agora</p>
+            <button class="botao-alternar" onclick="alternarFormulario()">
+              Ir para Cadastro
+            </button>
+          </div>
+        </div>
+        <!-- Cadastro -->
+        <div class="formulario formulario-cadastro">
+          <h2 class="titulo-formulario">Cadastro</h2>
+          <form class="form-cadastro">
+            <div class="campo-formulario">
+              <input
+                type="text"
+                class="input-nome"
+                placeholder="Nome"
+                required
+              />
+            </div>
+            <div class="campo-formulario">
+              <input
+                type="number"
+                class="input-cpf-cadastro"
+                placeholder="CPF"
+                required
+              />
+            </div>
+            <div class="campo-formulario">
+              <input
+                type="email"
+                class="input-email-cadastro"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div class="campo-formulario">
+              <input
+                type="password"
+                class="input-senha-cadastro"
+                placeholder="Senha"
+                required
+              />
+            </div>
+            <button type="submit" class="botao-enviar-cadastro">
+              Cadastrar
+            </button>
+          </form>
+          <div class="painel">
+            <h3>Já tem uma conta?</h3>
+            <p>Faça login</p>
+            <button class="botao-alternar" onclick="alternarFormulario()">
+              Ir para Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
